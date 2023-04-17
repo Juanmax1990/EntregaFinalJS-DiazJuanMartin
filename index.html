@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>JMD Tennis Academy</title>
+</head>
+
+<body>
+    <h1>Inscripción a clases de tenis</h1>
+    
+    <div class="fototenis">
+        <img src="./assets/img/tenis-foto.jpg">
+    </div>
+    <p>Complete el siguiente formulario para inscribirse a las clases de tenis</p>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+
+        <label for="nivel">Nivel:</label>
+        <select id="nivel" name="nivel">
+            <option value="">--Seleccione un nivel--</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+            <option value="escuelita">Escuelita de Tenis</option>
+        </select>
+
+        <label for="fechaInicio">Fecha de inicio:</label>
+        <input type="date" id="fechaInicio" name="fechaInicio">
+
+        <label for="diasReserva">Días de reserva:</label>
+        <select id="diasReserva" name="diasReserva">
+            <option value="">--Seleccione los días de reserva--</option>
+            <option value="1">1 día</option>
+            <option value="2">2 días</option>
+            <option value="3">3 días</option>
+            <option value="4">4 días</option>
+            <option value="5">5 días</option>
+        </select>
+
+        <button type="submit">Inscribirse</button>
+        <button type="reset">Limpiar formulario</button>
+    </form>
+
+    <div id="mensaje"></div>
+
+    <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Selecciona la ciudad...">
+            <select name="" id="country">
+                <option disabled selected value="">Selecciona el país...</option>
+                <option value="AR">Argentina</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="IT">Italia</option>
+                </select>
+            <input type="submit" name="" id="" value="Get Weather">
+        </form>
+    </section>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+<footer><div>
+    <p>Horarios disponibles</p>
+    <ul>
+        <li>Lunes a viernes: 8:00 a.m. - 12:00 p.m.</li>
+        <li>Lunes a viernes: 3:00 p.m. - 10:00 p.m.</li>
+        <li>Sábados: 8:00 a.m. - 12:00 p.m.</li>
+        <li>Escuelita: Lunes y miercoles 17:00hs p.m. - 19:00 p.m.</li>
+    </ul>
+    <p>Consultas al celular 2302465807 - Profesor Juan Martin Diaz</p>
+</div></footer>
+</html>
